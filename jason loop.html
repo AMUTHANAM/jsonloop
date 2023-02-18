@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+             var data = [{
+
+                        "name":"ram",
+                        "age":23,
+                        "place":"chennai"
+                        },
+                         {
+                
+                        "name":"raj",
+                        "age":24,
+                        "place":"ooty"
+                        },
+             
+                        {
+                        "name":"ragul",
+                        "age":25,
+                        "place":"kerla"
+                         }]
+
+                          //normal for loop
+
+                         for(i=0;i<data.length;i++)
+                         {
+                            console.log(data[i].age)
+                         }
+                         // for in loop
+
+                         for(key in data){
+                            console.log(key,data[key].name3)
+                         }
+
+                         //for of loop 
+
+                         for(element of data)
+                         {
+                            console.log(element.place)
+                         }
+
+                       //  forEach() loop
+
+                       data.forEach((element,i,data)=>{
+
+                        console.log(element,i,data)
+                       })
+
+
+
+    </script>
+       
+</body>
+</html>
